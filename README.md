@@ -24,7 +24,9 @@ Base64 encoding and decoding can be performed on Linux using command-line tools.
 
 To encode a file using Base64, you can use the following command:
 
-<code>base64 input_file > output_file.b64</code>
+```sh
+base64 input_file > output_file.b64
+```
 
 Replace input_file with the name of the file you want to encode and output_file.b64 with the desired name for the encoded file.
 
@@ -32,7 +34,9 @@ Replace input_file with the name of the file you want to encode and output_file.
 
 If you want to encode a string directly from the command line, you can use the echo command along with base64:
 
-<code>echo -n "your_string" | base64</code>
+```sh
+>echo -n "your_string" | base64
+```
 
 <a href="https://linuxguidehq.com/linux-command-line-base64-encoding-and-decoding/"> Base64-Encoding-and-Decoding
 </a>

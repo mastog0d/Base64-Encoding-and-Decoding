@@ -1,5 +1,5 @@
 # Base64-Encoding-and-Decoding
-Base64 Encoding and Decoding
+
 
 Base64 encoding is a binary-to-text encoding scheme that is commonly used to encode binary data, such as images, audio files, or any other binary content, into a text-based format. This encoding is useful when you need to transmit binary data over text-based protocols, such as email or HTTP, which may not handle binary data well.
 
@@ -16,3 +16,21 @@ Map the decimal value to a Base64 character: Use the decimal value to look up th
 Repeat the process until all binary data is encoded: Repeat steps 1-3 until all binary data is encoded.
 
 Base64 decoding is the reverse process, where the encoded Base64 text is converted back to its original binary form.
+
+
+Base64 encoding and decoding can be performed on Linux using command-line tools. The base64 command is commonly available on most Linux systems and can be used for this purpose.
+
+#Encoding a File:
+To encode a file using Base64, you can use the following command:
+
+
+base64 input_file > output_file.b64
+Replace input_file with the name of the file you want to encode and output_file.b64 with the desired name for the encoded file.
+
+#Encoding a String:
+If you want to encode a string directly from the command line, you can use the echo command along with base64:
+
+echo -n "your_string" | base64
+
+<a href="https://linuxguidehq.com/linux-command-line-base64-encoding-and-decoding/"> Base64-Encoding-and-Decoding
+</a>
